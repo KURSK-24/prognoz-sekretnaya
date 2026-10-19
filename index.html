@@ -25,6 +25,23 @@
     --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
   *{box-sizing:border-box;}
+
+  /* ---------- светлые блоки: слоновая кость, чередуются с синими ---------- */
+  .light{
+    --ink:#1b2340;
+    --ink-dim:rgba(27,35,64,0.80);
+    --ink-faint:rgba(27,35,64,0.56);
+    --panel:#fffaf1;
+    --panel-2:#f2e9d8;
+    --line:rgba(27,35,64,0.13);
+    --gold-1:#a9643e;
+    --gold-2:#8a4a2a;
+    --blue-acc:#3d6a98;
+    background:#f6efe2;
+    color:var(--ink);
+  }
+  .light .review-card{box-shadow:0 6px 22px rgba(27,35,64,0.10);}
+
   html,body{margin:0;padding:0;}
   html{scroll-behavior:smooth;}
   body{
@@ -436,7 +453,7 @@
 </section>
 
 <!-- ============ 2. РЕЗУЛЬТАТ ============ -->
-<section id="result">
+<section class="light" id="result">
   <div class="frame wide">
     <div class="result-head">
       <h2 id="resultTitle">Ваш прогноз</h2>
@@ -458,7 +475,7 @@
 </section>
 
 <!-- ============ 5. ПИТЧ КЛУБА ============ -->
-<section class="locked" id="pitch">
+<section class="locked light" id="pitch">
   <div class="frame">
     <div class="eyebrow reveal">Секретная Астрологика</div>
     <h2 class="reveal">Закрытое пространство, где я веду вас лично</h2>
@@ -518,18 +535,17 @@
 </section>
 
 <!-- ============ 7. ОТЗЫВЫ ============ -->
-<section class="locked" id="reviews">
+<section class="locked light" id="reviews">
   <div class="frame wide">
-    <h2 class="reveal">Что пишут ученицы Ольги</h2>
+    <h2 class="reveal">Что пишут участницы Секретной Астрологики</h2>
     <div class="review-grid reveal">
       <div class="review-row review-row-big">
-        <div class="review-card review-shot"><img src="assets/review-1.jpg" alt="Отзыв Коштули о курсе" loading="lazy"></div>
-        <div class="review-card review-shot"><img src="assets/review-3.jpg" alt="Отзыв Виктории Михайловой о курсе" loading="lazy"></div>
+        <div class="review-card review-shot"><img src="assets/review-klub-4.jpg" alt="Отзыв участницы клуба: после эфира попросила прибавку к зарплате, и её одобрили" loading="lazy"></div>
+        <div class="review-card review-shot"><img src="assets/review-klub-3.jpg" alt="Отзыв участницы: очень крутой клуб Секретная Астрологика, здесь все свои" loading="lazy"></div>
       </div>
-      <div class="review-row review-row-small">
-        <div class="review-card review-shot"><img src="assets/review-2.jpg" alt="Отзыв Татьяны Сальниковой о курсе" loading="lazy"></div>
-        <div class="review-card review-shot"><img src="assets/review-4.jpg" alt="Отзыв Елены о курсе" loading="lazy"></div>
-        <div class="review-card review-shot"><img src="assets/review-5.jpg" alt="Отзыв Татьяны о курсе" loading="lazy"></div>
+      <div class="review-row review-row-big">
+        <div class="review-card review-shot"><img src="assets/review-klub-1.jpg" alt="Отзыв Лены о записи эфира про деньги" loading="lazy"></div>
+        <div class="review-card review-shot"><img src="assets/review-klub-2.jpg" alt="Отзыв Натальи Деминой об эфире Венера и деньги" loading="lazy"></div>
       </div>
     </div>
   </div>
@@ -545,7 +561,7 @@
 </section>
 
 <!-- ============ 10. ЧЕЛОВЕЧЕСКИЙ FALLBACK ============ -->
-<section class="locked" id="fallback">
+<section class="locked light" id="fallback">
   <div class="frame">
     <p class="reveal" style="margin-bottom:20px;">Что-то не так или остался вопрос? Просто напишите Ольге</p>
     <a class="btn reveal" href="https://t.me/astrolog_pryadko" target="_blank" rel="noopener">Есть вопрос - пишите Ольге →</a>
